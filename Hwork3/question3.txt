@@ -1,0 +1,57 @@
+Script started on 2025-02-17 22:58:10+00:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="69" LINES="15"]
+[0;32m@JWHANN2 [0m➜ [1;34m/workspaces/csci-330-homeworks-JWHANN2/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ sbcl --load bottomup_mergesort_lisp.lisp
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+Initial partitioning: ((3 1) (4 1) (5 9) (2 6) (5 3) (5))
+Merging (3 1) and (4 1)
+Merging (1) and (4 1)
+Merging NIL and (4 1)
+Merging (5 9) and (4 1)
+Merging (5 9) and (1)
+Merging (5 9) and NIL
+Merging (5 3) and (4 1)
+Merging (5 3) and (1)
+Merging (5 3) and NIL
+After merging pairs: ((3 1 4 1) (4 1 5 9) (4 1 5 3))
+Merging (3 1 4 1) and (4 1 5 9)
+Merging (1 4 1) and (4 1 5 9)
+Merging (4 1) and (4 1 5 9)
+Merging (1) and (4 1 5 9)
+Merging NIL and (4 1 5 9)
+Merging (4 1 5 3) and (4 1 5 9)
+Merging (1 5 3) and (4 1 5 9)
+Merging (5 3) and (4 1 5 9)
+Merging (5 3) and (1 5 9)
+Merging (5 3) and (5 9)
+Merging (3) and (5 9)
+Merging NIL and (5 9)
+After merging pairs: ((3 1 4 1 4 1 5 9) (4 1 4 1 5 3 5 9))
+Merging (3 1 4 1 4 1 5 9) and (4 1 4 1 5 3 5 9)
+Merging (1 4 1 4 1 5 9) and (4 1 4 1 5 3 5 9)
+Merging (4 1 4 1 5 9) and (4 1 4 1 5 3 5 9)
+Merging (1 4 1 5 9) and (4 1 4 1 5 3 5 9)
+Merging (4 1 5 9) and (4 1 4 1 5 3 5 9)
+Merging (1 5 9) and (4 1 4 1 5 3 5 9)
+Merging (5 9) and (4 1 4 1 5 3 5 9)
+Merging (5 9) and (1 4 1 5 3 5 9)
+Merging (5 9) and (4 1 5 3 5 9)
+Merging (5 9) and (1 5 3 5 9)
+Merging (5 9) and (5 3 5 9)
+Merging (9) and (5 3 5 9)
+Merging (9) and (3 5 9)
+Merging (9) and (5 9)
+Merging (9) and (9)
+Merging NIL and (9)
+After merging pairs: ((3 1 4 1 4 1 4 1 4 1 5 5 3 5 9 9))
+
+Sorted List: (3 1 4 1 4 1 4 1 4 1 5 5 3 5 9 9)
+* (exit)
+[0;32m@JWHANN2 [0m➜ [1;34m/workspaces/csci-330-homeworks-JWHANN2/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ exi t
+exit
+
+Script done on 2025-02-17 22:58:24+00:00 [COMMAND_EXIT_CODE="0"]
