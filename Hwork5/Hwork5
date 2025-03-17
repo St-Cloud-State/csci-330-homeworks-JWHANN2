@@ -1,0 +1,49 @@
+Script started on 2025-03-17 18:25:54+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="69" LINES="15"]
+[0;32m@JWHANN2 [0m➜ [1;34m/workspaces/csci-330-homeworks-JWHANN2/Hwork5 [0;36m([1;31mmain[0;36m) [0m$ sbc l
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (load "LISPRecursiveParser.lisp")
+
+T
+* (load "test_q7.lisp")
+Running Q7 Parser Tests...
+Testing valid input: (A [ B C ])
+
+NIL Testing valid input: (X [ Y Z W ])
+
+NIL Testing valid input: (M [ N O P Q ])
+
+NIL Testing valid input: (I [ J K L ])
+
+NIL Testing valid input: (E [ F G ])
+
+NIL Testing valid input: (U [ V W X Y ])
+
+NIL Testing valid input: (O [ P Q R S T ])
+
+NIL Testing invalid input (should fail): (A [ B C)
+Expected error: Unexpected end of input in parse-expression
+Testing invalid input (should fail): ([ Y Z W ])
+Expected error: Expected identifier at beginning of variable
+Testing invalid input (should fail): (M N O P Q ])
+
+(N O P Q ]) Testing invalid input (should fail): (I [ J K 5 ])
+Expected error: Invalid identifier inside brackets
+Testing invalid input (should fail): (E [ F G)
+Expected error: Unexpected end of input in parse-expression
+Testing invalid input (should fail): (U V W X Y ])
+
+(V W X Y ]) Testing invalid input (should fail): (O P Q R S T)
+
+(P Q R S T) All Q7 tests completed.
+T
+* (quit)
+[0;32m@JWHANN2 [0m➜ [1;34m/workspaces/csci-330-homeworks-JWHANN2/Hwork5 [0;36m([1;31mmain[0;36m) [0m$ exi t
+exit
+
+Script done on 2025-03-17 18:26:27+00:00 [COMMAND_EXIT_CODE="0"]
